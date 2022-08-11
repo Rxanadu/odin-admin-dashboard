@@ -1,0 +1,72 @@
+/**********************/
+/*Global Elements*/
+/**********************/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.grid-container{
+    display: grid;
+}
+
+/**********************/
+/*Sidebar Section*/
+/**********************/
+.sidebar{
+background: aqua;
+grid-row: 1/4;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+/**********************/
+/*Searchbar Section*/
+/**********************/
+.search{
+    background: rgb(255, 255, 255);
+    grid-column: 2/4;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px rgb(106, 106, 106);
+}
+
+.search-top,
+.search-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+}
+/**********************/
+/*Content Section*/
+/**********************/
+.dashboard-content{
+    background: rgb(205, 205, 205);
+    grid-column: 2/4;
+    grid-row:3/4;
+    padding: 10px;
+}
+
+.content-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.card{
+    background: white;
+    border-left: 10px solid yellow;
+    border-radius: 10px;
+    width: 300px;
+}
