@@ -41,6 +41,20 @@ padding-top: 20px;
     font-size: 24pt;
 }
 
+.nav,
+.nav-second{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    padding: 25px 0;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
 /**********************/
 /*Searchbar Section*/
 /**********************/
@@ -50,6 +64,19 @@ padding-top: 20px;
     display: flex;
     flex-direction: column;
     box-shadow: 5px 5px 5px rgb(106, 106, 106);
+    padding:1px 25px;
+}
+
+.searchbar{
+    width: 60%;
+}
+
+input[type="search"]{
+    border: 0;
+    background: rgb(227, 227, 227);
+    border-radius: 15px;    
+    width: 70%;
+    height: 100%;
 }
 
 .search-top,
@@ -63,12 +90,55 @@ padding-top: 20px;
     filter: invert(100%);
 }
 
+.searchbar,
+.profile-info,
+.user-hello,
+.user-post{
+    display: flex;
+    align-items: center;
+}
+
+.profile-info{
+    gap: 15px;
+}
+
 button{
     color: white;
     background-color: rgb(27, 27, 230);
+    border: 0;
     border-radius: 25px;
     font-weight: bold;
     padding: 12px 5px;
+}
+
+.profile-info p,
+.search-bottom p{
+    font-weight: bold;
+}
+
+.avatar-small{
+    width: 32px;
+    height: 32px;
+}
+
+.avatar{
+    width: 48px;
+    height: 48px;
+}
+
+.user{
+    font-size: 18pt;
+}
+
+.user-hello{
+    gap: 15px;
+}
+
+.user-post{
+    width: 40%;
+    gap: 25px;
+    justify-content: end;
+    flex-grow: 1;
 }
 
 /**********************/
@@ -103,8 +173,15 @@ button{
     border-left: 10px solid rgb(255, 179, 0);
     border-radius: 10px;
     width: 300px;
-    padding: 5px;
+    padding: 15px;
     box-shadow: 5px 5px 5px rgb(106, 106, 106);
+}
+
+.card ul{
+    display: flex;
+    padding-top: 35px;
+    gap: 12px;
+    justify-content: end;
 }
 
 .project-title{
@@ -127,6 +204,7 @@ button{
 .trends{
     display: flex;
     flex-direction: column;
+    gap: 20px;
     background: white;
     border-radius: 10px;
     width: 250px;
@@ -136,10 +214,17 @@ button{
 
 .announce-list li{
     border-bottom:1px solid grey;
+    padding-bottom: 8px;
 }
 
 .announce-list li:last-child{
     border-bottom: 0;
+}
+
+.trends li{
+    display: flex;
+    gap: 8px;
+    align-items: center;
 }
 
 .announce-title,
